@@ -19,7 +19,11 @@
 
 /* General Style */
 body {
-
+	font-family: 'gungsu';
+}
+@font-face {
+	font-family: 'gungsu';
+	src: url(../assets/fonts/ChosunGs.TTF);
 }
 
 /* Simple Button styles*/

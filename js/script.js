@@ -76,8 +76,8 @@ monogatari.assets ('scenes', {
 // Define the Characters
 monogatari.characters ({
 	'y': {
-		name: 'Yui',
-		color: '#5bcaff'
+		name: '너굴',
+		color: '#AF6000'
 	}
 });
 
@@ -88,7 +88,7 @@ monogatari.script ({
 		'show notification Welcome',
 		{
 			'Input': {
-				'Text': 'What is your name?',
+				'Text': '이름이 뭐야?',
 				'Validation': function (input) {
 					return input.trim ().length > 0;
 				},
@@ -107,40 +107,72 @@ monogatari.script ({
 						}
 					});
 				},
-				'Warning': 'You must enter a name!'
+				'Warning': '이름 쓰라고!!!'
 			}
 		},
-		'y Hi {{player.name}} Welcome to Monogatari!',
+		'y 안녕 {{player.name}}, 어서와!',
+		'y 바보같은 {{player.name}}!!!',
 		{
 			'Choice': {
-				'Dialog': 'y Have you already read some documentation?',
+				'Dialog': 'y 모노가타리 문서 읽어봤니?',
 				'Yes': {
-					'Text': 'Yes',
-					'Do': 'jump Yes'
+					'Text': '엉',
+					'Do': 'jump 엉'
 				},
 				'No': {
-					'Text': 'No',
-					'Do': 'jump No'
+					'Text': '아닝',
+					'Do': 'jump 아닝'
+				},
+				'이거누르면바보': {
+					'Text': '이거 누르면 바보',
+					'Do': 'jump 바보'
 				}
 			}
 		}
 	],
 
-	'Yes': [
-		'y Thats awesome!',
-		'y Then you are ready to go ahead and create an amazing Game!',
-		'y I can’t wait to see what story you’ll tell!',
+	'엉': [
+		'y 잘했어!',
+		'y 개쩌는 게임을 만들때가 되었구나ㅏ??!!',
+		'y 땋흑 정말 기대되는 걸?',
 		'end'
 	],
 
-	'No': [
+	'아닝': [
 
-		'y You can do it now.',
+		'y 그럼 이거 읽어봐',
 
 		'show message Help',
 
-		'y Go ahead and create an amazing Game!',
-		'y I can’t wait to see what story you’ll tell!',
+		'y 이제 개쩌는 게임을 만들어보자!',
+		'y 땋흑 정말 기대되는 걸?',
 		'end'
+	],
+
+	'바보': [
+		'y 너 설마??',
+		{
+			'Choice': {
+				'Dialog': 'y 진짜 바보야?',
+				'맞는데': {
+					'Text': '맞아 나 바보야',
+					'Do': 'jump A_route'
+				},
+				'아닌데': {
+					'Text': '아니 구라야',
+					'Do': 'jump B_route'
+				}
+			}
+		}
+	],
+
+	'A_route':[
+		'y 응',
+		'end'
+	],
+	'B_route':[
+		'y 나랑 장난해?',
+		'jump 바보'
 	]
+
 });
