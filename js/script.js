@@ -85,7 +85,7 @@ monogatari.characters ({
 monogatari.script ({
 	// The game starts here.
 	'Start': [
-		'play music main_theme with volume 5',
+		'play music main_theme with volume 5 loop',
 		'show scene #f7f6f6 with fadeIn',
 		'show notification Welcome',
 		{
@@ -157,7 +157,7 @@ monogatari.script ({
 
 		'y 이제 개쩌는 게임을 만들어보자!',
 		'y 땋흑 정말 기대되는 걸?',
-		'jump 엉'
+		'end'
 	],
 
 
