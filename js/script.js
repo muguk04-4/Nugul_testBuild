@@ -69,16 +69,45 @@ monogatari.assets ('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
-
+	'scene_test1' : 'scene_test1.jpg'
 });
 
 
 // Define the Characters
 monogatari.characters ({
 	'y': {
-		name: '홈그라운드 최강의 아웃풋 굴너',
+		name: '실험용 개발자',
 		color: '#AF6000',
-		love: 100
+		directory: 'test',
+		sprites: {
+			normal: 'developer.png'
+		}
+	},
+	// 메인 캐릭터들
+	'me': {
+		name: '플레이어 이름(기본: 한여름)',
+		color: '#FF82FF',
+	},
+	'gang': {
+		name: '강성찬',
+		color: '#14D3FF'
+	},
+	'lee': {
+		name: '이연호',
+		color: '#FFC314'
+	},
+	'han': {
+		name: '한도율',
+		color: '#5AD18F'
+	},
+	'sa': {
+		name: '사예찬',
+		color: '#CD3861'
+	},
+	// 서브, 지나가던 행인
+	'who': {
+		name: '지나가던 행인',
+		color: '#E1F6FA'
 	}
 });
 
@@ -113,18 +142,18 @@ monogatari.script ({
 			}
 		},
 		'play voice scene1-nugul-1-1',
-		'y 안녕 {{player.name}}, 어서와!',
+		'y 더빙 테스트 과 유저 이름:{{player.name}}',
 		'play voice scene1-nugul-1-1',
-		'y 바보같은 {{player.name}}!!!',
+		'y 더빙 테스트 1번 더',
 		{
 			'Choice': {
 				'Dialog': 'y 모노가타리 문서 읽어봤니?',
 				'Yes': {
-					'Text': '엉',
+					'Text': '엉(호감도 기능 테스트)',
 					'Do': 'jump 엉'
 				},
 				'No': {
-					'Text': '아닝',
+					'Text': '아닝(그림 기능 테스트)',
 					'Do': 'jump 아닝'
 				},
 			}
@@ -132,10 +161,10 @@ monogatari.script ({
 	],
 
 	'엉': [
-		'y 잘했어!',
+		'y 계속 넘기면 -100이였던 B의 호감도가 100씩 상승합니다',
 		'stop music main_theme',
-		'y 개쩌는 게임을 만들때가 되었구나ㅏ??!!',
-		'y 땋흑 정말 기대되는 걸?',
+		'y 배경음 종료 테스트',
+		'y 호감도 증가 후 90이상일 시 B_ending',
 		function(){
 			this.storage().player.B += 100;
 		},
@@ -145,24 +174,22 @@ monogatari.script ({
 					return "B";
 				}
 			},
-			'B' : 'jump B_gimozzi',
+			'B' : 'jump B_ending',
 		}},
 		'jump 엉'
 	],
 
 	'아닝': [
 		'y 그럼 이거 읽어봐',
-
 		'show message Help',
 
-		'y 이제 개쩌는 게임을 만들어보자!',
-		'y 땋흑 정말 기대되는 걸?',
-		'end'
+		'y 테스트용 화면으로 이동합니다.',
+		'jump chapter1'
 	],
 
-
-	'B_gimozzi':[
+	'B_ending':[
 		'y B는 너를 사랑해',
+		'y end시 플레이어 정보가 초기화됩니다.',
 		'end'
 	],
 	
