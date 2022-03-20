@@ -69,7 +69,8 @@ monogatari.assets ('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
-	'scene_test1' : 'scene_test1.jpg'
+	'scene_test1' : 'scene_test1.jpg',
+	'scene_test2' : 'scene_test2.jpg'
 });
 
 
@@ -114,7 +115,6 @@ monogatari.characters ({
 monogatari.script ({
 	// The game starts here.
 	'Start': [
-		'play music main_theme with volume 5 loop',
 		'show scene #f7f6f6 with fadeIn',
 		'show notification Welcome',
 		{
@@ -141,6 +141,7 @@ monogatari.script ({
 				'Warning': '이름 쓰라고!!!'
 			}
 		},
+		'play music main_theme with volume 5 loop',
 		'play voice scene1-nugul-1-1',
 		'y 더빙 테스트 과 유저 이름:{{player.name}}',
 		'play voice scene1-nugul-1-1',
