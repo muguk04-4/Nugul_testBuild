@@ -91,7 +91,7 @@ button:hover {
 
 /* Choice Buttons style */
 [data-component="choice-container"] button {
-
+	background-color: aquamarine;
 }
 
 /* Choice Button Style on Hover */
