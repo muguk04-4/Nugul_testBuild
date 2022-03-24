@@ -91,12 +91,12 @@ button:hover {
 
 /* Choice Buttons style */
 [data-component="choice-container"] button {
-	background-color: aquamarine;
+	background-color: #5e4a47;
 }
 
 /* Choice Button Style on Hover */
 [data-component="choice-container"] button:hover {
-
+	background-color: #423331;
 }
 
 /* Text Box styling */
