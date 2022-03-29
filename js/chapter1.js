@@ -25,5 +25,6 @@ monogatari.script ({
 		'show scene scene_test2 with fadeIn with duration 3s',
 
 		'y {{player.name}}님, 테스트를 시작합니다',
+		'end'
 	],
 });
