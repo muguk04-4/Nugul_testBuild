@@ -105,7 +105,7 @@ button:hover {
 
 /* Character Name Style */
 [data-ui="who"] {
-	text-shadow:1px 1px 1px #000;
+	text-shadow:1px 1px 1px rgb(90, 81, 81);
 }
 
 /* Style for Centered Text */
