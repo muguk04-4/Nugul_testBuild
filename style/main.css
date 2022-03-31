@@ -101,22 +101,19 @@ button:hover {
 
 /* Text Box styling */
 [data-component="text-box"] {
-
 }
 
 /* Character Name Style */
 [data-ui="who"] {
-
+	text-shadow:1px 1px 1px #000;
 }
 
 /* Style for Centered Text */
 [data-component="centered-dialog"] {
-
 }
 
 /* Character Images Styles */
 [data-screen="game"] [data-character] {
-
 }
 
 /* Other Images Styles */
