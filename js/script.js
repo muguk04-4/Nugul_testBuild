@@ -89,7 +89,7 @@ monogatari.characters ({
 		name: '플레이어 이름(기본: 한여름)',
 		color: '#FF82FF',
 	},
-	'gang': {
+	'kang': {
 		name: '강성찬',
 		color: '#14D3FF'
 	},
@@ -106,10 +106,7 @@ monogatari.characters ({
 		color: '#CD3861'
 	},
 	// 서브, 지나가던 행인
-	'who': {
-		name: '지나가던 행인',
-		color: '#E1F6FA'
-	}
+	
 });
 
 monogatari.script ({
@@ -118,14 +115,14 @@ monogatari.script ({
 		'show scene #f7f6f6 with fadeIn',
 		'y hi',
 
-		{'Conditional' : {
-			'Condition': function(){
-				if(this.storage().player.name == 'ㅁㄴㅇㄹ'){
-					return "B";
-				}
-			},
-			'B' : 'jump B_ending',
-		}},
+		// {'Conditional' : {
+		// 	'Condition': function(){
+		// 		if(this.storage().player.name == 'ㅁㄴㅇㄹ'){
+		// 			return "B";
+		// 		}
+		// 	},
+		// 	'B' : 'jump B_ending',
+		// }},
 
 		'show notification Welcome',
 
@@ -153,6 +150,7 @@ monogatari.script ({
 				'Warning': '이름 쓰라고!!!'
 			}
 		},
+		
 
 		'play music main_theme with volume 5 loop',
 		'play voice scene1-nugul-1-1',
