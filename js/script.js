@@ -178,6 +178,7 @@ monogatari.script ({
 		'stop music main_theme',
 		'y 배경음 종료 테스트',
 		'y 호감도 증가 후 90이상일 시 B_ending',
+
 		function(){
 			this.storage().player.B += 100;
 		},
@@ -189,6 +190,7 @@ monogatari.script ({
 			},
 			'B' : 'jump B_ending',
 		}},
+		
 		'jump 엉'
 	],
 

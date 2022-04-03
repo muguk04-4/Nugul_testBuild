@@ -28,17 +28,14 @@ body {
 
 /* Simple Button styles*/
 button {
-
 }
 
 /* Simple Button Style on Hover */
 button:hover {
-
 }
 
 /* General Styling for Menu Screens */
 [data-screen] {
-
 }
 
 /**
@@ -49,7 +46,6 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-
 }
 
 /* Main Menu Buttons Styling */
