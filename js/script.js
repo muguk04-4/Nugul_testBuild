@@ -199,7 +199,7 @@ monogatari.script ({
 		'show message Help',
 
 		'y 테스트용 화면으로 이동합니다.',
-		'jump chapter1'
+		'jump choose_chapter1_or_testscene'
 	],
 
 	'B_ending':[
