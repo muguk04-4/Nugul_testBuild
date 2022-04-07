@@ -123,17 +123,6 @@ monogatari.script ({
 		'show scene #f7f6f6 with fadeIn',
 		'y hi',
 
-		// {'Conditional' : {
-		// 	'Condition': function(){
-		// 		if(this.storage().player.name == 'ㅁㄴㅇㄹ'){
-		// 			return "B";
-		// 		}
-		// 	},
-		// 	'B' : 'jump B_ending',
-		// }},
-
-		'show notification Welcome',
-
 		{
 			'Input': {
 				'Text': '이름이 뭐야?',
@@ -159,10 +148,9 @@ monogatari.script ({
 			}
 		},
 		
-
 		'play music main_theme with volume 5 loop',
 		'play voice scene1-nugul-1-1',
-		'y 더빙 테스트 과 유저 이름:{{player.name}}',
+		'y 더빙 테스트3 과 유저 이름:{{player.name}}',
 		'play voice scene1-nugul-1-1',
 		'y 더빙 테스트 1번 더',
 

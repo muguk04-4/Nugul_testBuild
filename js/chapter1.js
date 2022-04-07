@@ -36,6 +36,7 @@ monogatari.script ({
 		}
 	],
 	
+	// -------------------------------------
 	// 테스트씬
 	'testScene': [
 		'stop music main_theme',
@@ -104,6 +105,7 @@ monogatari.script ({
 		'성찬쿤과 여름쨩이 식사하며 식기를 부딪히는 소리와 레스토랑 실내음악만이 울려퍼져 공간을 메운다.'
 	],
 
+	// -------------------------------------
 	// 챕터1 (캐릭터, 배경, 사운드 테스트용)
 	'chapter1': [
 		'play music main_theme with volume 5 loop',
