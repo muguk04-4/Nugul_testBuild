@@ -18,10 +18,6 @@ monogatari.characters ({
 	},
 });
 
-monogatari.assets ('music', {
-	'chapter1_theme' : 'chapter1_theme.mp3'
-});
-
 monogatari.script ({
 	// 챕터 선택지
 	'choose_chapter1_or_testscene' :[
@@ -43,11 +39,15 @@ monogatari.script ({
 	// 테스트씬
 	'testScene': [
 		'stop music main_theme',
+		'play music testScene_theme with volume 50 loop',
+		'show scene testScene with fadeIn with duration 3s',
 		'강성찬과 여름이 아무도 없는 레스토랑에서 전세를 낸 듯 테이블에 앉아있다. 여름은 주위를 둘러보며 예쁜 레스토랑 내부를 구경하며 감탄하고 있다.',
-
+		
 		'(브금) 조용하고 잔잔한 피아노곡이 들리는 레스토랑 음악',
 		'(효과음) 웨이터가 구두를 신고 다가오는 소리 (타일 밟는 소리)',
 
+		'show character kang normal_L fadeIn with duration 2s at left',
+		'show character w normal fadeIn with duration 5s at right',
 		'w 주문하시겠습니까?',
 		'kang 스테이키로 부탁합니다.',
 		'w 네, 스테이크는 어떤 걸로 해드릴까요?',
@@ -62,9 +62,13 @@ monogatari.script ({
 		'w 메인이 좀 기름지니까, 기름기를 좀 잡아줄 수 있는 걸로 드릴까요? 독일 리즐링 화이트와인쪽으로 준비해드리겠습니다.',
 		'kang (엉성하게 웃는다) 아, 알겠습니다.',
 		'w 잠시만 기다려주시면 음식 준비해드리겠습니다.',
+		'hide character w with fadeOut with duration 3s',
 		
 		'(효과음) 웨이터가 구두를 신고 멀어지는 소리 (타일 밟는 소리)',
 
+
+		'hide character kang with fadeOut with duration 1s',
+		'show character kang normal_R fadeIn with duration 2s at center',
 		'익숙하지 않은 듯한 성찬의 바보같은 모습을 본 여름은 웃음을 참다가 결국 크게 웃어버린다. 성찬은 부끄러운 듯 얼굴을 붉히며 당황한다.',
 
 		'me (웃으며) 큭..큭하하하! 하하하! 웃겨라!',

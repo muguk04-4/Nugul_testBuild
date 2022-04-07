@@ -44,7 +44,9 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-	'main_theme' : 'main_theme.mp3'
+	'main_theme' : 'main_theme.mp3',
+	'chapter1_theme' : 'chapter1_theme.mp3',
+	'testScene_theme' : 'testScene_theme.mp3'
 });
 
 // Define the voice files used in the game.
@@ -70,7 +72,8 @@ monogatari.assets ('images', {
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
 	'scene_test1' : 'scene_test1.jpg',
-	'scene_test2' : 'scene_test2.jpg'
+	'scene_test2' : 'scene_test2.jpg',
+	'testScene' : 'testScene.png',
 });
 
 
@@ -91,7 +94,12 @@ monogatari.characters ({
 	},
 	'kang': {
 		name: '강성찬',
-		color: '#14D3FF'
+		color: '#14D3FF',
+		directory: 'test',
+		sprites: {
+			normal_R: 'kang_normal_R.png',
+			normal_L: 'kang_normal_L.png'
+		}
 	},
 	'lee': {
 		name: '이연호',
@@ -174,7 +182,7 @@ monogatari.script ({
 	],
 
 	'엉': [
-		'y 계속 넘기면 -100이였던 B의 호감도가 100씩 상승합니다',
+		'w 계속 넘기면 -100이였던 B의 호감도가 100씩 상승합니다',
 		'stop music main_theme',
 		'y 배경음 종료 테스트',
 		'y 호감도 증가 후 90이상일 시 B_ending',
