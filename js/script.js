@@ -89,7 +89,7 @@ monogatari.characters ({
 	},
 	// 메인 캐릭터들
 	'me': {
-		name: '플레이어 이름(기본: 한여름)',
+		name: '한여름',
 		color: '#FF82FF',
 	},
 	'kang': {

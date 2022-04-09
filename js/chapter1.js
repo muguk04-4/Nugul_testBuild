@@ -7,14 +7,13 @@ monogatari.characters ({
 			normal: 'birdrone.png'
 		}
 	},
-
 	'w': {
 		name: '웨이터',
 		color: '#FF0000',
 		directory: 'test',
 		sprites: {
 			normal: 'developer.png'
-		}
+		},
 	},
 });
 
