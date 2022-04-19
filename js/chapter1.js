@@ -49,7 +49,7 @@ monogatari.script ({
 		'show character kang normal_L fadeIn with duration 2s at left',
 		'show character w normal fadeIn with duration 5s at right',
 		'w 주문하시겠습니까?',
-		'kang 스테이키로 부탁합니다.',
+		'kang 스테이쿠로 부탁합니다.',
 		'w 네, 스테이크는 어떤 걸로 해드릴까요?',
 		'kang (고민하며) 추천..! 추천메뉴가 뭐죠?',
 		'w 요즘 잘 나가는 티본 스테이크로 해드릴까요?',
@@ -65,6 +65,7 @@ monogatari.script ({
 		'hide character w with fadeOut with duration 3s',
 		
 		'(효과음) 웨이터가 구두를 신고 멀어지는 소리 (타일 밟는 소리)',
+		'play sound highhill_tap',
 
 		'hide character kang with fadeOut with duration 1s',
 		'show character kang normal_R fadeIn with duration 2s at center',
@@ -76,10 +77,12 @@ monogatari.script ({
 
 		'(효과음) 웨이터가 구두를 신고 다가오는 소리 (타일 밟는 소리)',
 		'(효과음) 카트를 끌고 오는 소리',
+		'play sound dol_tap',
 
 		'me (큭큭 거리며 웃는다)',
 
 		'(효과음) 접시들을 테이블에 올려놓는 소리 (빵을 담아 놓는 나무재질 바구니 / 잼그릇과 잼칼 / 스프 2접시)',
+		'play sound dish_drop',
 
 		'kang 한여름씨. 그렇게 웃기십니까?',
 		'me ((효과음) 잼칼 가볍게 드는 소리 / 잼칼을 들어올려 빵에 잼을 바른다) 하하하. 대표님도 귀여운 구석이 있네요? 직원들이 이런 모습을 보면 깬다고 할걸요? (빵을 살짝 입에 물고) 완전 상남자스타일인 줄 알던데.',
@@ -99,6 +102,7 @@ monogatari.script ({
 		'kang (밝게 웃는 호) 네.',
 
 		'(효과음) 식기가 부딪히며 달그락 거리는 소리',
+		'play sound metal_dish',
 
 		'성찬쿤과 여름쨩이 식사하며 식기를 부딪히는 소리와 레스토랑 실내음악만이 울려퍼져 공간을 메운다.'
 	],

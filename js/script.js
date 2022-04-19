@@ -57,7 +57,11 @@ monogatari.assets ('voices', {
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
 	'click1' : 'click1.mp3',
-	'highhill_tap' : '104051_highhill_tap.mp3'
+	'highhill_tap' : '104051_highhill_tap.mp3',
+	'doldol' : '304131_doldoldol.mp3',
+	'dol_tap' : '304132_doldoldol_hilltap.mp3',
+	'dish_drop' : '404141_dish_drop.mp3',
+	'metal_dish' : '404144_metal_dish.mp3'
 });
 
 // Define the videos used in the game.
