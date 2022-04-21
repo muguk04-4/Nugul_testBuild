@@ -143,7 +143,9 @@ monogatari.script ({
 		'y 배경 바꾸기',
 		'show scene scene_test2 with fadeIn with duration 3s',
 
-		'y {{player.name}}님, 테스트용 씬을 시작하겠습니다.',
-		'stop music chapter1_theme'
+		'gallery unlock just_test',
+		'y {{player.name}}님, 갤러리에 새로운 사진을 잠금해제해드렸습니다. 확인해보세요',
+		'stop music chapter1_theme',
+		'end'
 	],
 });
