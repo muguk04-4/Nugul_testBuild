@@ -61,6 +61,8 @@ monogatari.assets ('sounds', {
 	'doldol' : '304131_doldoldol.mp3',
 	'dol_tap' : '304132_doldoldol_hilltap.mp3',
 	'dish_drop' : '404141_dish_drop.mp3',
+	'dish_drop_s' : '404143_dish_drop_short.mp3',
+	'breadknife' : '404142_breadknife.mp3',
 	'metal_dish' : '404144_metal_dish.mp3'
 });
 
