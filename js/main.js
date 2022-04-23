@@ -34,6 +34,6 @@ $_ready (() => {
 	monogatari.init ('#monogatari').then (() => {
 		// 3. Inside the init function:
 
-		monogatari.component ('quick-menu').removeButton ('Back');
+		//monogatari.component ('quick-menu').removeButton ('Back');
 	});
 });
