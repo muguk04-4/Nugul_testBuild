@@ -35,7 +35,7 @@ monogatari.settings({
 	// language selection screen that will be shown before the asset loading
 	// screen. If set to false, the loading screen will appear first instead and
 	// players will have to change the language from the settings screen.
-	'LanguageSelectionScreen': true,
+	'LanguageSelectionScreen': false,
 
 	// Music for the Main Menu.
 	'MainScreenMusic': '',
@@ -45,7 +45,7 @@ monogatari.settings({
 	'AutoSaveLabel': 'AutoSave',
 
 	// Turn main menu on/off; Default: true *
-	'ShowMainScreen': true,
+	'ShowMainScreen': false,
 
 	// Turn image preloading on/off, Default: true
 	'Preload': true,

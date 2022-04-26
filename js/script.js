@@ -87,7 +87,7 @@ monogatari.assets ('scenes', {
 // Define the Characters
 monogatari.characters ({
 	'y': {
-		name: '실험용 개발자 리승넨',
+		name: '웨이터',
 		color: '#AF6000',
 		directory: 'test',
 		sprites: {
@@ -96,7 +96,7 @@ monogatari.characters ({
 	},
 	// 메인 캐릭터들
 	'me': {
-		name: '한여름',
+		name: '{{player.name}}',
 		color: '#FF82FF',
 	},
 	'kang': {
@@ -133,6 +133,7 @@ monogatari.script ({
 		{
 			'Input': {
 				'Text': '이름이 뭐야?',
+				'Default' : '한여름',
 				'Validation': function (input) {
 					return input.trim ().length > 0;
 				},
@@ -151,7 +152,6 @@ monogatari.script ({
 						}
 					});
 				},
-				'Warning': '이름 쓰라고!!!'
 			}
 		},
 		
@@ -160,6 +160,8 @@ monogatari.script ({
 		'y 더빙 테스트3 과 유저 이름:{{player.name}}',
 		'play voice scene1-nugul-1-1',
 		'y 더빙 테스트 1번 더',
+
+		'jump testScene',
 
 		{
 			'Choice': {
