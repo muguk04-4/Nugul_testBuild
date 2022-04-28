@@ -68,6 +68,7 @@ monogatari.script ({
 		'w 네, 스테이크는 어떤 걸로 해드릴까요?',
 		'kang (고민하며) 추천..! 추천메뉴가 뭐죠?',
 		'w 요즘 잘 나가는 티본 스테이크로 해드릴까요?',
+		'show background scene_test1 with fadeIn',
 		'kang (긁적이며) 아.. 네.',
 		'w 안심, 채끝살로 준비해드리겠습니다. 와인은 어떻게 해드릴까요?',
 		'kang ({{player.name}}의 눈치를 보며) 그...그것도 추천으로.',
