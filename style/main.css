@@ -19,11 +19,11 @@
 
 /* General Style */
 body {
-	font-family: 'gungsu';
+	font-family: 'Bazzi_OTF';
 }
 @font-face {
-	font-family: 'gungsu';
-	src: url(../assets/fonts/ChosunGs.TTF);
+	font-family: 'Bazzi_OTF';
+	src: url(../assets/fonts/Bazzi_OTF.otf);
 }
 
 /* Simple Button styles*/
