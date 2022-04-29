@@ -56,7 +56,7 @@ monogatari.script ({
 		'stop music main_theme',
 		'play music testScene_theme with volume 50 loop',
 		'show scene testScene with fadeIn with duration 3s',
-		'강성찬과 {{player.name}}이 아무도 없는 레스토랑에서 전세를 낸 듯 테이블에 앉아있다. {{player.name}}은 주위를 둘러보며 예쁜 레스토랑 내부를 구경하며 감탄하고 있다.',
+		'<span style="font-weight:bold;">강성찬</span>과 {{player.name}}이 아무도 없는 레스토랑에서 전세를 낸 듯 테이블에 앉아있다. {{player.name}}은 주위를 둘러보며 예쁜 레스토랑 내부를 구경하며 감탄하고 있다.',
 		
 		'(효과음) 웨이터가 구두를 신고 다가오는 소리 (타일 밟는 소리)',
 		'play sound highhill_tap with fade 3',
