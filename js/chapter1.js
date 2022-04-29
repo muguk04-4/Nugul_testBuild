@@ -44,12 +44,12 @@ monogatari.script ({
 				},
 				'No': {
 					'Text': '챕터1',
-					'Do': 'jump chapter1'
+					'Do':'jump choose_chapter1_or_testscene',
+					'Do': 'wlrma',
 				},
 			}
 		}
 	],
-	
 	// -------------------------------------
 	// 테스트씬
 	'testScene': [
@@ -58,6 +58,7 @@ monogatari.script ({
 		'show scene testScene with fadeIn with duration 3s',
 		'<span style="font-weight:bold;">강성찬</span>과 {{player.name}}이 아무도 없는 레스토랑에서 전세를 낸 듯 테이블에 앉아있다. {{player.name}}은 주위를 둘러보며 예쁜 레스토랑 내부를 구경하며 감탄하고 있다.',
 		
+		'jump choose_chapter1_or_testscene',
 		'(효과음) 웨이터가 구두를 신고 다가오는 소리 (타일 밟는 소리)',
 		'play sound highhill_tap with fade 3',
 
@@ -68,7 +69,8 @@ monogatari.script ({
 		'w 네, 스테이크는 어떤 걸로 해드릴까요?',
 		'kang (고민하며) 추천..! 추천메뉴가 뭐죠?',
 		'w 요즘 잘 나가는 티본 스테이크로 해드릴까요?',
-		'show background scene_test1 with fadeIn',
+		'show background testScene_theme with fadeout',
+		'show background scene_test1 with fadeIn 2s',
 		'kang (긁적이며) 아.. 네.',
 		'w 안심, 채끝살로 준비해드리겠습니다. 와인은 어떻게 해드릴까요?',
 		'kang ({{player.name}}의 눈치를 보며) 그...그것도 추천으로.',
