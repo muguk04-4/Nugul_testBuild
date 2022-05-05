@@ -45,7 +45,6 @@ monogatari.script ({
 				'No': {
 					'Text': '챕터1',
 					'Do':'jump choose_chapter1_or_testscene',
-					'Do': 'wlrma',
 				},
 			}
 		}
