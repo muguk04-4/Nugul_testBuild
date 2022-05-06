@@ -72,10 +72,11 @@ monogatari.script ({
 		'stop music main_theme',
 		'play music testScene_theme with volume 25 loop',
 		'show scene testScene with fadeIn with duration 3s',
-		'<span style="font-weight:bold;">강성찬</span>과 {{player.name}}이 아무도 없는 레스토랑에서 전세를 낸 듯 테이블에 앉아있다. {{player.name}}은 주위를 둘러보며 예쁜 레스토랑 내부를 구경하며 감탄하고 있다.',
+		'<span style="font-weight:bold; font-size:50px">강성찬</span>과 {{player.name}}이 아무도 없는 레스토랑에서 전세를 낸 듯 테이블에 앉아있다. {{player.name}}은 주위를 둘러보며 예쁜 레스토랑 내부를 구경하며 감탄하고 있다.',
 		
-		'(효과음) 웨이터가 구두를 신고 다가오는 소리 (타일 밟는 소리)',
 		'play sound highhill_tap with fade 3',
+		//'(효과음) 웨이터가 구두를 신고 다가오는 소리 (타일 밟는 소리)',
+		
 
 		'show character kang normal_L fadeIn with duration 2s at left',
 		'show character w normal fadeIn with duration 5s at right',
@@ -104,8 +105,8 @@ monogatari.script ({
 		'w 잠시만 기다려주시면 음식 준비해드리겠습니다.',
 		'hide character w with fadeOut with duration 3s',
 		
-		'(효과음) 웨이터가 구두를 신고 멀어지는 소리 (타일 밟는 소리)',
 		'play sound highhill_tap',
+		//'(효과음) 웨이터가 구두를 신고 멀어지는 소리 (타일 밟는 소리)',
 
 		'hide character kang with fadeOut with duration 1s',
 		'show character kang normal_R fadeIn with duration 2s at center',
@@ -118,14 +119,14 @@ monogatari.script ({
 		'play voice 000_han_002',
 		'me (크게 웃는 소리 / 재미있다는 듯 눈물을 닦으며 놀리듯) 그냥, 우리 대표님 추천 좋아하시나보다~',
 
-		'(효과음) 웨이터가 구두를 신고 다가오는 소리 (타일 밟는 소리) + (효과음) 카트를 끌고 오는 소리',
 		'play sound dol_tap',
+		//'(효과음) 웨이터가 구두를 신고 다가오는 소리 (타일 밟는 소리) + (효과음) 카트를 끌고 오는 소리',
 
 		'play voice 000_han_003',
 		'me (큭큭 거리며 웃는다)',
 
-		'(효과음) 접시들을 테이블에 올려놓는 소리 (빵을 담아 놓는 나무재질 바구니 / 잼그릇과 잼칼 / 스프 2접시)',
 		'play sound dish_drop',
+		//'(효과음) 접시들을 테이블에 올려놓는 소리 (빵을 담아 놓는 나무재질 바구니 / 잼그릇과 잼칼 / 스프 2접시)',
 
 		'play voice 000_kang_008',
 		'kang {{player.name}}씨. 그렇게 웃기십니까?',
@@ -162,8 +163,8 @@ monogatari.script ({
 		'play voice 000_kang_015',
 		'kang (밝게 웃는 호) 네.',
 
-		'(효과음) 식기가 부딪히며 달그락 거리는 소리',
 		'play sound metal_dish',
+		//'(효과음) 식기가 부딪히며 달그락 거리는 소리',
 
 		'성찬쿤과 {{player.name}}쨩이 식사하며 식기를 부딪히는 소리와 레스토랑 실내음악만이 울려퍼져 공간을 메운다.'
 	],
