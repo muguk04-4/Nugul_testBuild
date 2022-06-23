@@ -87,8 +87,7 @@ monogatari.script ({
 		'play voice 000_kang_002',
 		'kang (고민하며) 추천..! 추천메뉴가 뭐죠?',
 		'w 요즘 잘 나가는 티본 스테이크로 해드릴까요?',
-		'show background testScene_theme with fadeout',
-		'show background scene_test1 with fadeIn 4s',
+		
 		'play voice 000_kang_003',
 		'kang (긁적이며) 아.. 네.',
 		'w 안심, 채끝살로 준비해드리겠습니다. 와인은 어떻게 해드릴까요?',
