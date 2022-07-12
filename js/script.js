@@ -87,7 +87,7 @@ monogatari.assets ('scenes', {
 // Define the Characters
 monogatari.characters ({
 	'y': {
-		name: '웨이터',
+		name: '개발자',
 		color: '#AF6000',
 		directory: 'test',
 		sprites: {
